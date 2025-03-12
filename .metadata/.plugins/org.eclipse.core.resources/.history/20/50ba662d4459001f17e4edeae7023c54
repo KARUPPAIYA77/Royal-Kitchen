@@ -1,0 +1,5 @@
+package com.tapfoods.Servlets;
+
+public @interface WebServlet {
+
+}

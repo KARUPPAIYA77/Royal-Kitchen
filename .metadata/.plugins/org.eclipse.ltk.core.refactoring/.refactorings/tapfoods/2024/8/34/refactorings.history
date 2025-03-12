@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;tapfoods&apos;&#x0D;&#x0A;- Original project: &apos;tapfoods&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     failure.jsp&#x0D;&#x0A;     Home.jsp&#x0D;&#x0A;     index.jsp&#x0D;&#x0A;     Login.jsp&#x0D;&#x0A;     Register.jsp" description="Delete elements" element1="src/main/webapp/WEB-INF/index.jsp" element2="src/main/webapp/WEB-INF/Register.jsp" element3="src/main/webapp/WEB-INF/Home.jsp" element4="src/main/webapp/WEB-INF/failure.jsp" element5="src/main/webapp/WEB-INF/Login.jsp" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1724132278677" subPackages="false" version="1.0"/>
+</session>

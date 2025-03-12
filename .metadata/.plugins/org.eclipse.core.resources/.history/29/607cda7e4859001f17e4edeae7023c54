@@ -1,0 +1,38 @@
+
+package com.tapfoods.controller;
+
+import java.io.IOException;
+
+import com.tapfoods.dao.UserDao;
+import com.tapfoods.daoimpl.userDaoImpl;
+import com.tapfoods.model.User;
+@WebServlet("/Login")
+public class LoginServlets extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    private UserDao userDao;
+
+    public void init() throws ServletException {
+        super.init();
+        userDao = new userDaoImpl(); // Initialize the userDao
+    }
+
+    @Override
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+
+        if (email == null || password == null || email.isEmpty() || password.isEmpty()) {
+            response.sendRedirect("Failure.jsp");
+            return;
+        }
+
+        User user = userDao.authenticateUser(email, password);
+        if (user != null) {
+            request.getSession().setAttribute("user", user);
+            response.sendRedirect("Home.jsp");
+        } else {
+            response.sendRedirect("Failure.jsp");
+        }
+    }
+}
