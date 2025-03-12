@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;tapfoods/src/main/webapp/in.jsp&apos; to &apos;Register.jsp&apos;" description="Rename resource &apos;in.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/in.jsp" name="Register.jsp" stamp="1723290340439" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;tapfoods/src/main/webapp/index.jsp&apos; to &apos;Login.jsp&apos;" description="Rename resource &apos;index.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/index.jsp" name="Login.jsp" stamp="1723290352860" updateReferences="true"/>
-</session>
